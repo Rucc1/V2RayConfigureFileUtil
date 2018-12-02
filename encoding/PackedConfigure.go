@@ -7,10 +7,10 @@ import (
 	"os"
 	"strings"
 
+	"compress/gzip"
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/crypto/sha3"
 )
-import "compress/gzip"
 
 func (e *Encoder) PackV2RayConfigureIntoPackedForm(FileName string) ([]byte, error) {
 
